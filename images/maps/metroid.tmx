@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="metroid-style" tilewidth="32" tileheight="32" tilecount="600" columns="24">
+  <image source="ridleyTiles.jpg" width="768" height="800"/>
+  <terraintypes>
+   <terrain name="Nouveau terrain" tile="-1"/>
+  </terraintypes>
+ </tileset>
+ <layer name="Background" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACzNjYmAwG8S4iWFkYQDaJNTQkAEAAA==
+  </data>
+ </layer>
+ <layer name="SubBackground" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC6tjYGCoIwJPQ8MwgC6+Dg3DALr4MTQMA7jEYWA7IwRjA2ZMCPycEYKRxShRhw2Tqo4YAACgixAekAEAAA==
+  </data>
+ </layer>
+ <layer name="CollisionMask" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgGNyABQ3jEt/KSNgskJqzRKg7SwN16O5dCcSrGDDFAY+/AwKQAQAA
+  </data>
+ </layer>
+</map>

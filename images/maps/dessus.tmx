@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="dessus" tilewidth="32" tileheight="32" tilecount="120" columns="15">
+  <image source="12695780_10207408243995681_1061834883_n.jpg" width="480" height="256"/>
+ </tileset>
+ <layer name="background" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC7NlYGCwHcWDBgMA23cLT5ABAAA=
+  </data>
+ </layer>
+ <layer name="Calque 2" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC2NgIB9kDSJ1WUTigXIfseoAWch4VZABAAA=
+  </data>
+ </layer>
+ <layer name="Calque 3" width="10" height="10">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAC3NhYGBwRcPOQOyCJqYJxSFIOAiIg9HEiAVcQMxNhLwkEEvhUYcur0Fje81x2EsImBNWAgYAthutgZABAAA=
+  </data>
+ </layer>
+</map>
