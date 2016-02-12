@@ -23,7 +23,7 @@ public class Personnage {
         goingRight = false;
         moving = false;
         speed = 0.15f;
-        animations = new Animation[18];
+        animations = new Animation[20];
         spriteSheet = new SpriteSheet("images/sprites/Space_Pirate_Fusion.png",73,58);
         
         animations[0] = loadAnimation(spriteSheet,false,0,7,0);
@@ -42,8 +42,10 @@ public class Personnage {
         animations[13] = loadAnimation(spriteSheet,true,0,1,6);
         animations[14] = loadAnimation(spriteSheet,false,0,1,7);
         animations[15] = loadAnimation(spriteSheet,true,0,1,7);
-        animations[16] = loadAnimation(spriteSheet,0,2,8,0,2,9,200);
-        animations[17] = loadAnimation(spriteSheet,0,2,9,0,2,8,200);
+        animations[16] = loadAnimation(spriteSheet,false,0,2,8,200);
+        animations[17] = loadAnimation(spriteSheet,true,0,2,8,200);
+        animations[18] = loadAnimation(spriteSheet,false,0,2,9,200);
+        animations[19] = loadAnimation(spriteSheet,true,0,2,9,200);
         
         
         
@@ -59,17 +61,6 @@ public class Personnage {
     }
     private Animation loadAnimation(SpriteSheet ss,boolean invert,int startX,int endX,int y){
         return loadAnimation(ss,invert,startX,endX,y,FRAME_DURATION);
-    }
-    private Animation loadAnimation(
-            SpriteSheet ss,int startX1,int endX1,int y1,int startX2,int endX2,int y2,int frameDur){
-        Animation anim = new Animation();
-        for(int i=startX1;i<endX1+1;i++){
-            anim.addFrame(ss.getSprite(i, y1),frameDur);
-        }
-        for(int i = startX2;i<endX2;i++){
-            anim.addFrame(ss.getSprite(i, y2).getFlippedCopy(true, false), frameDur);
-        }
-        return anim;
     }
     public Animation[] getAninmations(){
         return animations;
